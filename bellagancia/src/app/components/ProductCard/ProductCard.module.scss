@@ -1,0 +1,12 @@
+/* src/styles/components/ProductCard.module.scss */
+.productCard {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  
