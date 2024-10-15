@@ -1,8 +1,8 @@
 // src/pages/index.tsx
-import Header from '../../components/Header';
-import Footer from '../components/Footer';
-import Carousel from '../components/Carousel';
-import ProductCard from '../components/ProductCard';
+import Header from '../../components/Header/Header';
+import Footer from '../components/Footer/Footer';
+import Carousel from '../components/Carousel/Carousel';
+import ProductCard from '../components/ProductCard/ProductCard';
 import styles from '../styles/pages/Home.module.scss';
 
 const Home = () => {

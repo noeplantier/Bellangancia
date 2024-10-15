@@ -1,16 +1,21 @@
-// src/components/SecureComponent.tsx
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
-import { checkAuth } from '../utils/auth';
+"use client";
 
-const Secure: React.FC = ({ children }) => {
+import { useEffect, ReactNode } from 'react';
+import { useRouter } from 'next/router';
+import { checkAuth } from '../../utils/Auth';
+
+interface SecureProps {
+  children: ReactNode;
+}
+
+function Secure({ children }: SecureProps) {
   const router = useRouter();
 
   useEffect(() => {
     if (!checkAuth()) {
       router.push('/login');
     }
-  }, []);
+  }, [router]);
 
   return <>{children}</>;
 }
