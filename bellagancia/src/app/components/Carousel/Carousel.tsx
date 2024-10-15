@@ -1,10 +1,10 @@
 // src/components/Carousel.tsx
-import styles from '../styles/components/Carousel.module.scss';
+import styles from './Carousel.module.scss';
 
 const Carousel = () => {
   return (
     <div className={styles.carousel}>
-      <img src="/images/banner1.jpg" alt="Banner 1" />
+      <img src="/bellagancia/public/images/bellagancia1.webp" alt="Bellagancia 1" />
     </div>
   );
 }

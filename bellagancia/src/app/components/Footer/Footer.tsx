@@ -1,5 +1,5 @@
 // src/components/Footer.tsx
-import styles from '../styles/components/Footer.module.scss';
+import styles from './Footer.module.scss';
 
 const Footer = () => {
   return (
