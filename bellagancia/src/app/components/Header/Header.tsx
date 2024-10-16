@@ -1,20 +1,25 @@
-// src/components/Header.tsx
 import Link from 'next/link';
 import styles from './Header.module.scss';
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <nav>
+      <div className="logo-container">
+  <h1 className="logo-title">Bellagancia</h1>
+  <p className="logo-subtitle">Make Up & Nails</p>
+</div>
+
+      <nav className={styles.nav}>
         <ul>
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="/about">About</Link></li>
+          <li><Link href="/soins">Soins</Link></li>
+          <li><Link href="/reservations">Réservations</Link></li>
+          <li><Link href="/cadeaux">Cadeaux</Link></li>
+          <li><Link href="/salon">Mon Salon</Link></li>
           <li><Link href="/contact">Contact</Link></li>
-          <li><Link href="/shop">Shop</Link></li>
         </ul>
       </nav>
     </header>
   );
-}
+};
 
 export default Header;

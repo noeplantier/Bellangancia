@@ -1,10 +1,54 @@
-/* src/styles/components/Header.module.scss */
 .header {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://st4.depositphotos.com/1275255/30083/i/600/depositphotos_300836484-stock-photo-bright-blurred-gray-abstract-template.jpg');
+  display: flex;
+  justify-content: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav li {
+  a {
+    color: #ffc1e3; /* Rose pâle */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
     
-    padding: 1rem;
-    nav {
-      display: flex;
-      justify-content: space-between;
+    &:hover {
+      color: #fff;
     }
   }
-  
+}
+
+.logo-container {
+  left: 10%;
+  display: flex;
+  background: linear-gradient(to right, #d3c4b7, #2b2926);
+  width: 600px; /* Ajuste la taille selon tes besoins */
+  height: 100px; /* Ajuste la taille selon tes besoins */
+  border-radius: 10px;
+}
+
+.logo-title {
+  font-family: 'Playfair Display', serif; /* Assure-toi de charger cette police ou choisis-en une similaire */
+  font-size: 3rem;
+  color: #000;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.logo-subtitle {
+  font-family: 'Montserrat', sans-serif; /* Assure-toi de charger cette police ou choisis-en une similaire */
+  font-size: 1rem;
+  color: #000;
+  letter-spacing: 1px;
+  margin: 0;
+}

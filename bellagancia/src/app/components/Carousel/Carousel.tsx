@@ -4,7 +4,7 @@ import styles from './Carousel.module.scss';
 const Carousel = () => {
   return (
     <div className={styles.carousel}>
-      <img src="/bellagancia/public/images/bellagancia1.webp" alt="Bellagancia 1" />
+      <img src="/images/bellagancia-ban.avif" alt="bellagancia-ban" />
     </div>
   );
 }

@@ -1,5 +1,8 @@
-@import 'components/header';
-@import 'components/footer';
-@import 'components/productCard';
-@import 'components/button';
-@import 'mixins';
+@import './components/Header/Header.module.scss';
+@import './components/Footer/Footer.module.scss';
+@import './pages/Soins/Soins.module.scss';
+@import './pages/Reservations/Reservations.module.scss';
+@import './pages/Cadeaux/Cadeaux.module.scss';
+@import './pages/Salon/Salon.module.scss';
+@import './pages/Contact/Contact.module.scss';
+
