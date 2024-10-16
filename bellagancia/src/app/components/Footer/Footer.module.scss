@@ -1,3 +1,4 @@
+/* src/styles/components/Footer.module.scss */
 .footer {
   padding-bottom: 6rem;
   padding-top: 6rem;
@@ -6,12 +7,14 @@
   background-image: url('https://st4.depositphotos.com/1275255/30083/i/600/depositphotos_300836484-stock-photo-bright-blurred-gray-abstract-template.jpg');
   display: flex;
   justify-content: center;
-  .styles.info{
-margin-top: 2rem;
-    
-  }
+  align-items: center;
+}
 
-  .info p {
+.info {
+  margin-top: 2rem;
+  text-align: center;
+  
+  p {
     color: #ffc1e3;
     text-decoration: none;
     font-weight: bold;
@@ -22,9 +25,4 @@ margin-top: 2rem;
       color: #fff;
     }
   }
-}
-
-.h1{
-
-  margin-bottom: 2rem;
 }
