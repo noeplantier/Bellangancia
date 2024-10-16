@@ -1,4 +1,5 @@
 import styles from './Footer.module.scss';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -15,6 +16,9 @@ const Footer = () => {
         <p>vendredi 09:00 AM - 07:00 PM</p>
         <p>samedi 09:00 AM - 07:00 PM</p>
         <p>dimanche : Fermé</p>
+        <p>
+          <Link href={'https://www.instagram.com/planityofficiel/'}>Instagram</Link>
+          </p>
         
       </div>
     </footer>
