@@ -11,7 +11,6 @@ function Home () {
       <Header />
       <Carousel />
       <section className={styles.products}>
-      <h1>SALON BELLAGANCIA A BRUGES </h1>
 
         <ProductCard title="Product 1" image="/images/bellagancia1.webp" />
         <ProductCard title="Product 2" image="/images/bellagancia2.webp" />

@@ -1,15 +1,24 @@
-import '../styles/main.scss';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import Soins from '..//pages/Soins/Soins';
+import Reservations from '../pages/Reservations/Reservations';
+import Cadeaux from '../pages/Cadeaux/Cadeaux';
+import MonSalon from '../pages/Salon/Salon';
+import Contact from '../pages/Contact/Contact';
 
-function MyApp({ Component, pageProps }) {
+const App = () => {
   return (
-    <>
+    <Router>
       <Header />
-      <Component {...pageProps} />
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/soins" element={<Soins />} />
+        <Route path="/reservations" element={<Reservations />} />
+        <Route path="/cadeaux" element={<Cadeaux />} />
+        <Route path="/mon-salon" element={<MonSalon />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 
-export default MyApp;
+export default App;

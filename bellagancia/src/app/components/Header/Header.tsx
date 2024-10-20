@@ -1,5 +1,6 @@
 // src/components/Header.tsx
 import styles from './Header.module.scss';
+import Link from 'next/link'; // Utilisez Link si vous êtes sous Next.js
 
 const Header = () => {
   return (
@@ -10,11 +11,11 @@ const Header = () => {
       </div>
       <nav className={styles.nav}>
         <ul>
-          <li><a href="#soins">Soins</a></li>
-          <li><a href="#reservations">Réservations</a></li>
-          <li><a href="#cadeaux">Cadeaux</a></li>
-          <li><a href="#mon-salon">Mon Salon</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link href="/soins">Soins</Link></li>
+          <li><Link href="/reservations">Réservations</Link></li>
+          <li><Link href="/cadeaux">Cadeaux</Link></li>
+          <li><Link href="/mon-salon">Mon Salon</Link></li>
+          <li><Link href="/contact">Contact</Link></li>
         </ul>
       </nav>
     </header>
