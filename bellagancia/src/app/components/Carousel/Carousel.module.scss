@@ -3,7 +3,7 @@
   width: 400vh;
   height: 100vh;
   overflow: hidden;
-  position: relative;
+  position: absolute;
   
   img {
     width: 201vh;
@@ -27,7 +27,7 @@
   .reserveButton {
    
     position: absolute;
-    bottom: 210px;
+    bottom: 90px;
     left: 25%;
     transform: translateX(-50%);
     background: #5e5959;

@@ -1,11 +1,13 @@
 import styles from './Footer.module.scss';
-import Link from 'next/link';
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.info}>
-        <h1>Bellagancia - Bordeaux</h1>
+      <div className={styles.logoContainer}>
+        <h1 className={styles.logoTitle}>Bellagancia</h1>
+        <h2 className={styles.logoSubtitle}>Make Up & Nails</h2>
+      </div>
         <p><strong>Adresse :</strong> All. Joachim du Bellay, 33520 Bruges</p>
         <p><strong>Téléphone :</strong> 07 68 84 21 26</p>
         <p><strong>Horaires :</strong> </p>
@@ -16,9 +18,7 @@ const Footer = () => {
         <p>vendredi 09:00 AM - 07:00 PM</p>
         <p>samedi 09:00 AM - 07:00 PM</p>
         <p>dimanche : Fermé</p>
-        <p>
-          <Link href={'https://www.instagram.com/planityofficiel/'}>Instagram</Link>
-          </p>
+       
         
       </div>
     </footer>

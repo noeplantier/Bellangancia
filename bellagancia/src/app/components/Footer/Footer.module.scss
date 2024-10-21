@@ -1,7 +1,7 @@
 /* src/styles/components/Footer.module.scss */
 .footer {
   padding-bottom: 6rem;
-  padding-top: 6rem;
+  padding-top: 3rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('https://st4.depositphotos.com/1275255/30083/i/600/depositphotos_300836484-stock-photo-bright-blurred-gray-abstract-template.jpg');
@@ -10,9 +10,34 @@
   align-items: center;
 }
 
+.logoContainer {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligne le logo à gauche */
+  padding-left: 20px; /* Légèrement espacé du bord */
+}
+
+.logoTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #000;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.logoSubtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #000;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+
 .info {
   margin-top: 2rem;
-  text-align: center;
+  text-align: left;
   
   p {
     color: #ffc1e3;
