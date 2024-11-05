@@ -1,4 +1,5 @@
 // src/components/Carousel.tsx
+import HeroSection from '../HeroSection/HeroSection';
 import styles from './Carousel.module.scss';
 
 const Carousel = () => {
@@ -9,7 +10,7 @@ const Carousel = () => {
         Réservez
       </a>
     </div>
-  );
-}
 
+  );   
+}
 export default Carousel;

@@ -1,15 +1,14 @@
-import styles from './Cadeaux.module.scss';
+// pages/cadeaux.tsx
+import React from 'react';
+import DashboardLayout from '../../components/DashboardLayout/DashboardLayout';
 
-const Cadeaux = () => {
+const CadeauxPage: React.FC = () => {
   return (
-    <div className={styles.page}>
-      <h1 className={styles.title}>Cadeaux</h1>
-      <p>
-        Offrez un moment de bien-être avec nos cartes cadeaux. Parfaites pour toutes les occasions,
-        nos cartes permettent à vos proches de choisir le soin qui leur fera plaisir.
-      </p>
-    </div>
+    <DashboardLayout>
+      <h2>Cadeaux</h2>
+      {/* Contenu de la page Cadeaux */}
+    </DashboardLayout>
   );
 };
 
-export default Cadeaux;
+export default CadeauxPage;

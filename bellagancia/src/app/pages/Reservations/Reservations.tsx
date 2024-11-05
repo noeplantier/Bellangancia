@@ -1,15 +1,13 @@
-import styles from './Reservations.module.scss';
-
-const Reservations = () => {
+// pages/reservations.tsx
+import React from 'react';
+import DashboardLayout from '../../components/DashboardLayout/DashboardLayout';
+const ReservationsPage: React.FC = () => {
   return (
-    <div className={styles.page}>
-      <h1 className={styles.title}>Réservations</h1>
-      <p>
-        Réservez dès maintenant pour profiter de nos soins exclusifs et personnalisés. 
-        Choisissez le créneau horaire qui vous convient et laissez nos experts prendre soin de vous.
-      </p>
-    </div>
+    <DashboardLayout>
+      <h2>Réservations</h2>
+      {/* Contenu de la page Réservations */}
+    </DashboardLayout>
   );
 };
 
-export default Reservations;
+export default ReservationsPage;

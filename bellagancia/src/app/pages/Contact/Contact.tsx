@@ -1,15 +1,14 @@
-import styles from './Contact.module.scss';
+// pages/contact.tsx
+import React from 'react';
+import DashboardLayout from '../../components/DashboardLayout/DashboardLayout';
 
-const Contact = () => {
+const ContactPage: React.FC = () => {
   return (
-    <div className={styles.page}>
-      <h1 className={styles.title}>Contact</h1>
-      <p>
-        Vous avez des questions ou souhaitez prendre rendez-vous ? Contactez-nous par téléphone ou via notre formulaire en ligne.
-        Nos équipes sont à votre écoute pour répondre à toutes vos demandes.
-      </p>
-    </div>
+    <DashboardLayout>
+      <h2>Contact</h2>
+      {/* Contenu de la page Contact */}
+    </DashboardLayout>
   );
 };
 
-export default Contact;
+export default ContactPage;

@@ -1,8 +1,8 @@
-// src/pages/index.tsx
-import Header from '../app/components/Header/Header';
-import Footer from '../app/components/Footer/Footer';
-import Carousel from '../app/components/Carousel/Carousel';
-import ProductCard from '../app/components/ProductCard/ProductCard';
+"use client"
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Carousel from './components/Carousel/Carousel';
+import ProductCard from './components/ProductCard/ProductCard';
 import styles from "./page.module.scss";
 import About from './pages/About/About';
 import Soins from './pages/Soins/Soins';
@@ -10,6 +10,7 @@ import Reservations from './pages/Reservations/Reservations';
 import Salon from './pages/Salon/Salon';
 import Contact from './pages/Contact/Contact';
 import Cadeaux from './pages/Cadeaux/Cadeaux';
+
 
 function Home () {
   return (
